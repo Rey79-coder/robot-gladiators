@@ -10,13 +10,22 @@ var enemyNames = ["Roborto", "Amy Android", "Robo Trumble"];
 var enemyHealth = 50;
 var enemyAttack = 12;
 
+// You can also log multiple values at once like this
+console.log(enemyNames);
 
+
+// for([initial expression]; [condition]; [increment expression]) { statement }
 for(var i = 0; i < enemyNames.length; i++) {
     console.log(enemyNames[i]);
     console.log(i);
     console.log(enemyNames [i] + " is at " + i + " index");
   }
-// for([initial expression]; [condition]; [increment expression]) { statement }
+
+
+ 
+
+
+
 
 
 var enemyHealth = 50;
@@ -25,16 +34,15 @@ var enemyAttack = 12;
 var fight = function() {
   window.alert("Welcome to Robot Gladiators!");
 };
+fight();
 
-
-
+while(enemyHealth > 0) {
 var fight = function(enemyName) {
-    // Alert players that they are starting the round
-    window.alert("Welcome to Robot Gladiators!");
 
     promptFight = window.prompt("Would you like to FIGHT or SKIP this battle? Enter 'FIGHT' or 'SKIP' to choose.");
     console.log(
     promptFight);
+
 
   // if player choses to fight, then fight
 
@@ -88,6 +96,7 @@ if (promptFight === "fight" || promptFight === "FIGHT") {
 
   for(var i = 0; i < enemyNames.length; i++) {
     fight(enemyNames[i]);
+  }
   }
 
   // Game States
